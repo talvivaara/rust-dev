@@ -15,7 +15,8 @@ This XML-parser will be an introduction to rust together with databases. We try 
 ## Rust - Container
 ### Starting up
 ```
-TBA
+docker-compose up --build
+docker-compose run --rm rust 
 ```
 ### Shutting down
 ```
