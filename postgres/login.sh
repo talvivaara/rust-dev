@@ -22,6 +22,7 @@ login_db() {
     PGPASSWORD=$(cat files/secret | awk '{ print $2 }')
     echo "Connecting to database ... "
     echo "$PG_USERNAME"
+    echo "$PGPASSWORD"
     psql postgresql://$PG_USERNAME:$PGPASSWORD@127.0.0.1:5432
 }
 
