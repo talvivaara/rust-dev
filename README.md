@@ -1,4 +1,4 @@
-# Eust development environment
+# Rust development environment
 
 This XML-parser will be an introduction to rust together with databases. We try to implement everything that is required in this repo and goal is to have a working development environment ready with running a one small script.
 
