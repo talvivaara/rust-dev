@@ -1,4 +1,4 @@
-# Rust development environment
+# xml-parser
 
 This XML-parser will be an introduction to rust together with databases. We try to implement everything that is required in this repo and goal is to have a working development environment ready with running a one small script.
 
@@ -13,13 +13,23 @@ This XML-parser will be an introduction to rust together with databases. We try 
 - Test cases to be done later, XML parsing and storing to database.
 
 ## Rust - Container
+### Building
+```
+docker build -t rust-dev .
+```
 ### Starting up
 ```
-TBA
+docker-compose up --build
+docker-compose run --rm rust
+UID=$(id -u) GID=$(id -g) docker-compose up -d
 ```
 ### Shutting down
 ```
 TBA
+```
+### Operating
+```
+container=$(docker ps | grep rust | awk '{ print $1 }'); docker exec -it $container bash
 ```
 
 ## Postgres
