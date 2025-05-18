@@ -1,0 +1,13 @@
+services:
+  rust:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        UID: ${UID:-1000}
+        GID: ${GID:-1000}
+    container_name: rust_container
+    volumes:
+      - ../source:/source
+    working_dir: /projects
+    command: sleep infinity
